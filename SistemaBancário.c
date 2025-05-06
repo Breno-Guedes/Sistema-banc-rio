@@ -23,8 +23,8 @@ switch(op){
 		
 	   	valor = valor + bancario;
 		
-		   printf("\nDEPÓSITO REALIZADO COM SUCESSO");
-		   printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);
+		printf("\nDEPÓSITO REALIZADO COM SUCESSO");
+		printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);
 	break;
 	
 	case '2':
@@ -47,11 +47,11 @@ switch(op){
 	
 
 	case '3':
-		   printf("\nSEU SALDO É DE: R$ %.2f", valor);
+		printf("\nSEU SALDO É DE: R$ %.2f", valor);
 	break;
 	
 	case '4':
-		   printf("\nFIM DAS TRANSAÇÕES.");
+		printf("\nFIM DAS TRANSAÇÕES.");
 	break;
 
  default:

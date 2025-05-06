@@ -34,12 +34,14 @@ switch(op){
 		valor = valor - bancario;
 		
 		if(valor < 0){
-     valor = valor + bancario;
-		   	printf("SALDO INSUFICIENTE");
+
+         valor = valor + bancario;
+		        printf("SALDO INSUFICIENTE");
+
 		} else {
 		
-	    	printf("\nSAQUE REALIZADO COM SUCESSO");
-	    	printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);	
+	        	printf("\nSAQUE REALIZADO COM    SUCESSO");
+	    	    printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);	
 	}
 
 	break;

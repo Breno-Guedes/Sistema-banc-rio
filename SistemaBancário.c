@@ -18,47 +18,45 @@ do{
 
 switch(op){
 	case '1':
-		printf("\nDIGITE O VALOR QUE SERÁ DEPOSITADO: ");
-		scanf("%f", &bancario);
+	   	printf("\nDIGITE O VALOR QUE SERÁ DEPOSITADO: ");
+	   	scanf("%f", &bancario);
 		
-		valor = valor + bancario;
+	   	valor = valor + bancario;
 		
-		printf("\nDEPÓSITO REALIZADO COM SUCESSO");
-		printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);
+		   printf("\nDEPÓSITO REALIZADO COM SUCESSO");
+		   printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);
 	break;
 	
 	case '2':
-		printf("\nDIGITE O VALOR QUE SERÁ SACADO: ");
-		scanf("%f", &bancario);
+	   	printf("\nDIGITE O VALOR QUE SERÁ SACADO: ");
+		   scanf("%f", &bancario);
 		
 		valor = valor - bancario;
 		
 		if(valor < 0){
-			printf("SALDO INSUFICIENTE");
-		
+     valor = valor + bancario;
+		   	printf("SALDO INSUFICIENTE");
 		} else {
 		
-		printf("\nSAQUE REALIZADO COM SUCESSO");
-		printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);
-		
-	    }
+	    	printf("\nSAQUE REALIZADO COM SUCESSO");
+	    	printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);	
+	}
+
 	break;
 	
 
 	case '3':
-		if(valor < 0) {
-		
-		valor = valor + bancario;
-	}
-		printf("\nSEU SALDO É DE: R$ %.2f", valor);
+		   printf("\nSEU SALDO É DE: R$ %.2f", valor);
 	break;
 	
 	case '4':
-		printf("\nFIM DAS TRANSAÇÕES.");
+		   printf("\nFIM DAS TRANSAÇÕES.");
 	break;
 
-    default:
+ default:
     	printf("\nOPÇÃO NÃO ENCONTRADA.");
+ break;
+
 }
 }while( op >= '1' && op <= '3');
 	

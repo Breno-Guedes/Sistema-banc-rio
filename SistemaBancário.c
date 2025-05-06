@@ -29,21 +29,20 @@ switch(op){
 	
 	case '2':
 	   	printf("\nDIGITE O VALOR QUE SERÁ SACADO: ");
-		   scanf("%f", &bancario);
+		scanf("%f", &bancario);
 		
 		valor = valor - bancario;
 		
-		if(valor < 0){
+	if(valor < 0){
 
-         valor = valor + bancario;
-		        printf("SALDO INSUFICIENTE");
+                valor = valor + bancario;
+	        printf("SALDO INSUFICIENTE");
 
-		} else {
+	} else {
 		
-	        	printf("\nSAQUE REALIZADO COM    SUCESSO");
-	    	    printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);	
+	        printf("\nSAQUE REALIZADO COM    SUCESSO");
+	    	printf("\nSEU SALDO AGORA É DE: R$ %.2f", valor);	
 	}
-
 	break;
 	
 
